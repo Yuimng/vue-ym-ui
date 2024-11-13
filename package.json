@@ -1,0 +1,38 @@
+{
+  "name": "vue-ym-ui",
+  "version": "0.0.4",
+  "private": false,
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue-ym-ui.umd.cjs",
+  "module": "./dist/vue-ym-ui.js",
+  "exports": {
+    "./dist/style.css": "./dist/style.css",
+    "./css": "./dist/style.css",
+    ".": {
+      "import": "./dist/vue-ym-ui.js",
+      "require": "./dist/vue-ym-ui.umd.cjs"
+    }
+  },
+  "author": "yuimng",
+  "license": "ISC",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.4.37",
+    "vue-ym-ui": "^0.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "sass": "1.77.6",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1",
+    "vue-tsc": "^2.0.29"
+  }
+}
